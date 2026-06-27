@@ -1,0 +1,31 @@
+{
+  "name": "attack-path-query-engine",
+  "version": "1.0.0",
+  "description": "A RESTful query engine over the Train Ticket microservices graph with pluggable route filters.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "graph",
+    "microservices",
+    "attack-path",
+    "rest-api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.3"
+  }
+}
